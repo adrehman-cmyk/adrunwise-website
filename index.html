@@ -430,6 +430,42 @@
   </div>
 </section>
 
+<style>
+  .realwork .rw-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:40px; }
+  .rw-card { background:#fff; border:1px solid var(--gray-200); border-radius:16px; overflow:hidden; box-shadow:var(--shadow); }
+  .rw-card img { width:100%; display:block; border-bottom:1px solid var(--gray-100); }
+  .rw-card figcaption { padding:16px 20px; font-size:14px; color:var(--gray-500); line-height:1.6; }
+  .rw-card figcaption strong { color:var(--gray-900); }
+  @media(max-width:760px){ .realwork .rw-grid { grid-template-columns:1fr; } }
+</style>
+
+<!-- REAL WORK -->
+<section class="realwork">
+  <div class="container">
+    <p class="label">Under the hood</p>
+    <h2 class="section-title">Real systems, really built.</h2>
+    <p class="section-sub">Not mockups — actual automations I’ve built and run. Here’s a look behind the scenes.</p>
+    <div class="rw-grid">
+      <figure class="rw-card">
+        <img src="/proof-receptionist.jpg" alt="The live AI receptionist handling an after-hours emergency booking" loading="lazy">
+        <figcaption>The <strong>live AI receptionist</strong> handling an after-hours emergency booking — the same one you can try above.</figcaption>
+      </figure>
+      <figure class="rw-card">
+        <img src="/proof-booking.jpg" alt="Automation that books a job into Google Calendar from a webhook" loading="lazy">
+        <figcaption><strong>Booking automation</strong> — a call fires a webhook that books the job straight into Google Calendar.</figcaption>
+      </figure>
+      <figure class="rw-card">
+        <img src="/proof-sync.jpg" alt="Automation syncing monday.com data into Confluence on a schedule" loading="lazy">
+        <figcaption><strong>Live data sync</strong> — pulling from monday.com and auto-updating Confluence docs on a schedule.</figcaption>
+      </figure>
+      <figure class="rw-card">
+        <img src="/proof-dashboard.jpg" alt="Auto-synced Confluence dashboards and runbooks" loading="lazy">
+        <figcaption><strong>Auto-synced dashboards &amp; runbooks</strong> — live documentation that updates itself from your tools.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <!-- STORY / PROBLEM -->
 <section class="story" id="story">
   <div class="container">
