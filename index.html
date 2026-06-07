@@ -485,58 +485,9 @@
   @media(max-width:900px){ .budget-grid { grid-template-columns: 1fr; } }
 </style>
 
-<div class="budget">
-  <div class="budget-head">
-    <p class="label">Total Cost of Ownership</p>
-    <h2 class="section-title">What about the software costs?</h2>
-    <p class="section-sub">
-      My fee is a one-time setup. The tools your system runs on are billed
-      separately by their providers — and they're affordable. Here's what to
-      expect so there are no surprises.
-    </p>
-  </div>
-
-  <div class="budget-grid">
-    <div class="budget-card">
-      <p class="budget-tier">AI Receptionist</p>
-      <div class="budget-range">$30–80<span class="budget-per"> /mo</span></div>
-      <ul class="budget-list">
-        <li>AI call-answering platform</li>
-        <li>Dedicated business phone number</li>
-      </ul>
-    </div>
-    <div class="budget-card">
-      <p class="budget-tier">Smart Booking</p>
-      <div class="budget-range">$50–130<span class="budget-per"> /mo</span></div>
-      <ul class="budget-list">
-        <li>Online booking &amp; calendar software</li>
-        <li>SMS &amp; email reminders</li>
-        <li>AI call answering</li>
-      </ul>
-    </div>
-    <div class="budget-card">
-      <p class="budget-tier">Full Autopilot</p>
-      <div class="budget-range">$120–250<span class="budget-per"> /mo</span></div>
-      <ul class="budget-list">
-        <li>CRM &amp; automation platform</li>
-        <li>SMS, booking &amp; AI answering</li>
-        <li>Invoicing &amp; payments</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="budget-note">
-    <span class="budget-note-icon">💡</span>
-    <p>
-      <strong>You own these accounts directly</strong> — nothing is locked to me,
-      and you can cancel anytime. Many tools have free tiers to start, so real-world
-      costs often land at the low end. We agree on the exact stack during your free
-      call, before you spend a dollar.
-    </p>
-  </div>
-</div>
-
-
+<p class="tool-note">
+        <strong>A note on tool costs:</strong> your system runs on third-party software (booking, CRM, AI call platforms) billed separately by their providers — roughly <strong>$30–250/mo</strong> depending on your package. You own those accounts and can cancel anytime; we agree on the exact stack on your free call, before you spend a dollar.
+      </p>
   </div>
 </section>
 
@@ -664,6 +615,21 @@
   .uc-grid { margin-top: 28px; gap: 20px; }
   .uc-card { padding: 22px; }
   .uc-list { margin-top: 10px; }
+</style>
+<style>
+  /* pricing compaction */
+  .service-card { padding: 24px; }
+  .card-name { font-size: 18px; margin-bottom: 4px; }
+  .card-tagline { font-size: 12.5px; margin-bottom: 12px; }
+  .card-price { font-size: 30px; margin-bottom: 4px; }
+  .card-price-note { font-size: 12px; margin-bottom: 14px; }
+  .card-divider { margin: 12px 0; }
+  .card-list { margin-bottom: 16px; }
+  .card-list li { padding: 4px 0 4px 22px; font-size: 13px; }
+  .card-timeline { font-size: 11px; margin-bottom: 12px; }
+  /* tool-cost disclaimer (replaced the Total Cost of Ownership section) */
+  .tool-note { max-width: 780px; margin: 28px auto 0; padding: 16px 22px; background: var(--blue-bg); border:1px solid var(--blue-bd); border-radius: 12px; font-size: 13.5px; color: var(--gray-700); line-height: 1.65; }
+  .tool-note strong { color: var(--gray-900); }
 </style>
 </body>
 </html>
