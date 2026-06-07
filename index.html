@@ -176,8 +176,8 @@
 
   /* PROCESS */
   .process { background: var(--white); border-bottom: 1px solid var(--gray-100); }
-  .process-steps { display: grid; grid-template-columns: repeat(5,1fr); gap: 16px; position: relative; margin-top: 48px; }
-  .process-steps::before { content:''; position: absolute; top: 26px; left: 10%; right: 10%; height: 2px; background: linear-gradient(90deg,var(--blue-bd),var(--blue),var(--blue-bd)); z-index: 0; }
+  .process-steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; position: relative; margin-top: 48px; }
+  .process-steps::before { content:''; position: absolute; top: 26px; left: 16.6%; right: 16.6%; height: 2px; background: linear-gradient(90deg,var(--blue-bd),var(--blue),var(--blue-bd)); z-index: 0; }
   .step { text-align: center; padding: 0 8px; position: relative; z-index: 1; }
   .step-num { width: 52px; height: 52px; background: var(--blue); color: white; border-radius: 50%; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; box-shadow: 0 0 0 6px white, 0 0 0 7px var(--blue-bd); }
   .step-tag { display: inline-block; font-size: 10px; color: var(--blue); background: var(--blue-bg); padding: 3px 10px; border-radius: 100px; margin-bottom: 10px; font-weight: 700; }
@@ -189,8 +189,9 @@
   .uc-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; margin-top: 48px; }
   .uc-card { background: white; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 32px; box-shadow: var(--shadow); transition: box-shadow .2s, transform .2s; }
   .uc-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
-  .uc-header { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 20px; }
-  .uc-icon { font-size: 36px; flex-shrink: 0; }
+  .uc-header { display:flex; align-items:center; gap:16px; margin-bottom:0; }
+  .uc-icon { width:46px; height:46px; border-radius:12px; background:var(--blue-bg); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .uc-icon svg { width:23px; height:23px; fill:none; stroke:var(--blue); stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
   .uc-industry { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 17px; font-weight: 800; color: var(--gray-900); margin-bottom: 3px; }
   .uc-subtitle { font-size: 13px; color: var(--gray-400); }
   .uc-list { list-style: none; }
@@ -513,20 +514,28 @@
     <p class="section-sub">If your business runs on calls, bookings, and customers, AD Runwise automates the repetitive parts.</p>
     <div class="uc-grid">
       <div class="uc-card">
-        <div class="uc-header"><div class="uc-icon">🔧</div><div><div class="uc-industry">Trades &amp; Home Services</div><div class="uc-subtitle">Plumbers, Electricians, HVAC, Roofers, Landscapers</div></div></div>
-        <ul class="uc-list"><li>AI receptionist answers after-hours calls</li><li>Automatic job scheduling and dispatch</li><li>Customer follow-up and review requests</li><li>Invoice generation and payment reminders</li></ul>
+        <div class="uc-header">
+          <div class="uc-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+          <div><div class="uc-industry">Trades &amp; Home Services</div><div class="uc-subtitle">Plumbers, Electricians, HVAC, Roofers, Landscapers</div></div>
+        </div>
       </div>
       <div class="uc-card">
-        <div class="uc-header"><div class="uc-icon">🦷</div><div><div class="uc-industry">Health &amp; Wellness</div><div class="uc-subtitle">Physio, Chiro, Dental, Massage, Clinics</div></div></div>
-        <ul class="uc-list"><li>Online appointment booking 24/7</li><li>Automated patient reminders and confirmations</li><li>New patient onboarding workflows</li><li>Follow-up care messages and rebooking</li></ul>
+        <div class="uc-header">
+          <div class="uc-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <div><div class="uc-industry">Health &amp; Wellness</div><div class="uc-subtitle">Physio, Chiro, Dental, Massage, Clinics</div></div>
+        </div>
       </div>
       <div class="uc-card">
-        <div class="uc-header"><div class="uc-icon">🚗</div><div><div class="uc-industry">Automotive</div><div class="uc-subtitle">Mechanics, Detailing, Tire Shops, Auto Body</div></div></div>
-        <ul class="uc-list"><li>Online booking for service appointments</li><li>Automatic service reminders by mileage or date</li><li>Customer updates during repairs</li><li>Review and referral request automation</li></ul>
+        <div class="uc-header">
+          <div class="uc-icon"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+          <div><div class="uc-industry">Automotive</div><div class="uc-subtitle">Mechanics, Detailing, Tire Shops, Auto Body</div></div>
+        </div>
       </div>
       <div class="uc-card">
-        <div class="uc-header"><div class="uc-icon">🏋️</div><div><div class="uc-industry">Fitness &amp; Studios</div><div class="uc-subtitle">Gyms, Personal Trainers, Yoga, Dance</div></div></div>
-        <ul class="uc-list"><li>Class and session booking automation</li><li>New member onboarding sequences</li><li>Attendance reminders and no-show follow-ups</li><li>Renewal reminders and upsell workflows</li></ul>
+        <div class="uc-header">
+          <div class="uc-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+          <div><div class="uc-industry">Fitness &amp; Studios</div><div class="uc-subtitle">Gyms, Personal Trainers, Yoga, Dance</div></div>
+        </div>
       </div>
     </div>
   </div>
